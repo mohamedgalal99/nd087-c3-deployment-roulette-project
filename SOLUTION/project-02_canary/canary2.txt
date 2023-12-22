@@ -1,0 +1,9 @@
+root@galal-sre-02:~/nd087-c3-deployment-roulette-project# k get pod  -o wide
+NAME                           READY   STATUS    RESTARTS   AGE     IP             NODE                                         NOMINATED NODE   READINESS GATES
+blue-9b56b55cc-55x4c           1/1     Running   0          90m     10.100.3.90    ip-10-100-3-78.us-east-2.compute.internal    <none>           <none>
+blue-9b56b55cc-86z8c           1/1     Running   0          90m     10.100.3.80    ip-10-100-3-78.us-east-2.compute.internal    <none>           <none>
+blue-9b56b55cc-ttlhv           1/1     Running   0          88m     10.100.3.220   ip-10-100-3-78.us-east-2.compute.internal    <none>           <none>
+canary-v1-546bfbf766-jkpw9     1/1     Running   0          88m     10.100.3.227   ip-10-100-3-78.us-east-2.compute.internal    <none>           <none>
+canary-v1-546bfbf766-wr665     1/1     Running   0          10m     10.100.1.252   ip-10-100-1-110.us-east-2.compute.internal   <none>           <none>
+canary-v2-8dc775cd6-d25vr      1/1     Running   0          3m31s   10.100.1.113   ip-10-100-1-110.us-east-2.compute.internal   <none>           <none>
+hello-world-7b67f6885d-wttg5   1/1     Running   0          88m     10.100.3.239   ip-10-100-3-78.us-east-2.compute.internal    <none>           <none>
