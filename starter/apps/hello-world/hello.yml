@@ -25,9 +25,10 @@ spec:
           livenessProbe:
             httpGet:
               port: 9000
-              path: /nginx_status
-            initialDelaySeconds: 2
-            periodSeconds: 2
+              path: /healthz
+              #path: /nginx_status
+            initialDelaySeconds: 10
+            periodSeconds: 10
       nodeSelector:
         kubernetes.io/os: linux
       restartPolicy: Always

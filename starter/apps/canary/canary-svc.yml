@@ -5,8 +5,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: canary
-    version: "1.0"
+      app: canary
   ports:
     - protocol: TCP
       port: 80
