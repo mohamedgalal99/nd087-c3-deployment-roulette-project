@@ -1,0 +1,48 @@
+# Destroy
+
+Resources under k8s namespace udacity
+
+```bash
+root@galal-sre-02:~/nd087-c3-deployment-roulette-project# kubectl delete all --all -n udacity
+pod "bloaty-mcbloatface-6c5b5fc984-2qw6z" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-44jb4" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-46ssk" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-4v27v" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-9mcbs" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-cjmxp" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-gxxm7" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-k9xjk" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-lbc7l" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-n9x76" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-pfqk8" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-pwz72" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-rn5wd" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-rwwb4" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-sm9v8" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-vfp9f" deleted
+pod "bloaty-mcbloatface-6c5b5fc984-vpg2p" deleted
+pod "canary-v2-8dc775cd6-sc46l" deleted
+pod "canary-v2-8dc775cd6-wfmw7" deleted
+pod "canary-v2-8dc775cd6-z4rrw" deleted
+pod "green-568777db7-5npqt" deleted
+pod "green-568777db7-lcr4l" deleted
+pod "green-568777db7-rzd2w" deleted
+service "blue-svc" deleted
+service "canary-svc" deleted
+service "green-svc" deleted
+deployment.apps "bloaty-mcbloatface" deleted
+deployment.apps "canary-v1" deleted
+deployment.apps "canary-v2" deleted
+deployment.apps "green" deleted
+```
+
+terraform 
+
+```bash
+root@galal-sre-02:~/nd087-c3-deployment-roulette-project/starter/infra# terraform destroy
+...
+module.vpc.aws_vpc.this: Destruction complete after 1s
+
+Destroy complete! Resources: 47 destroyed.
+root@galal-sre-02:~/nd087-c3-deployment-roulette-project/starter/infra#
+```
